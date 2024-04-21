@@ -1,5 +1,5 @@
-from communicator import Communicator
-from client import Client
+from src.client import Client
+from src.communicator import Communicator
 
 def print_information():
 	print("\nI can use three types of code: Caesar, Vernam and Vigenere.")

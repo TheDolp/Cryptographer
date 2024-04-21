@@ -1,5 +1,5 @@
-from pathlib import PurePath
 import os
+from pathlib import PurePath
 
 class Client: 
 	@staticmethod

@@ -1,5 +1,5 @@
-from math import ceil
 import random
+from math import ceil
 
 class VernamCode:
 	only_simple_decode = True

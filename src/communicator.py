@@ -1,9 +1,8 @@
-from client import Client
-from alphabet import RussianAlphabet, EnglishAlphabet
-from caesar import CaesarCode
-from vigenere import VigenereCode
-from vernam import VernamCode
-from client import Client
+from src.alphabet import RussianAlphabet, EnglishAlphabet
+from src.caesar import CaesarCode
+from src.client import Client
+from src.vernam import VernamCode
+from src.vigenere import VigenereCode
 
 class Communicator: 
 
@@ -50,7 +49,7 @@ class Communicator:
 	@staticmethod
 	def new_decode(code):
 		if code.only_simple_decode:
-			simple_decode(code)
+			Communicator.simple_decode(code)
 			return
 		print("Basic decode or auto-decode?")
 		[Communicator.simple_decode, Communicator.auto_decode][Client.get_num(1, 2, ["Basic", "Auto"]) - 1](code)
